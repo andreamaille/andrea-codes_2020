@@ -1,0 +1,48 @@
+html {
+    font-size: 125%;
+}
+
+// Fonts
+
+$font-size-base:    20;
+$font-size-lg:      28;
+$font-size-sm:      18;
+
+
+@mixin displayFont ($sizeValue) {
+    font-size: ($sizeValue/20) * 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color:$text;
+    line-height: 1.2;
+}
+
+@mixin headingsFont ($sizeValue) {
+    color: $text;
+    font-size: ($sizeValue/20) * 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+@mixin bodyFont ($sizeValue) {
+    color: $text;
+    font-size: ($sizeValue/20) * 1rem;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+}
+
+nav ul li {
+    @include headingsFont ($font-size-base);
+
+}
+
+.logo {
+    @include displayFont ($font-size-lg);
+    letter-spacing: 2px;
+    span {
+        color: $contrast;
+    }
+}

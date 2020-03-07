@@ -1,0 +1,34 @@
+body,
+.wrapper,
+.header-background {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    width:85%;
+}
+
+ul, 
+li, 
+img,
+h1,
+h3 {
+    margin:0;
+	padding:0;
+}
+
+img {
+	width: 100%;
+	max-width:100%;
+}
+
+ul, 
+li {
+	list-style-type: none;
+}
+
+a {
+    color: $text;
+    text-decoration: none;
+}

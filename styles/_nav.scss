@@ -1,0 +1,42 @@
+.sidebar {
+    position: fixed;
+    width:20%;
+    height: 100vh;
+}
+
+.sidebar-bg {
+    display: block;
+    &::before {
+        content:"";
+        display: block;
+        position: absolute;
+        top:0;
+        border-top: 600px solid $primaryLight;
+        border-left: 0px solid transparent;
+        border-right: 120px solid transparent;
+        height: 0;
+        width: 200px;
+        z-index: -10;
+    }
+    &::after{
+        content:"";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 375px 0 0 400px;
+        border-color: transparent transparent transparent $primaryDark;
+        z-index: -10;
+    }
+}
+
+
+nav {
+    width:70%;
+    margin: 25px auto;
+    ul li {
+        margin: 15px 0;
+    }
+}
