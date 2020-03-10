@@ -8,34 +8,7 @@ $text: #282c37;
 $white: #f0f5f7;
 $black: #252525;
 
-// Fonts
 
-$font-size-base:    20;
-$font-size-lg:      24;
-$font-size-sm:      18;
-
-
-@mixin displayFont ($sizeValue) {
-    font-size: ($sizeValue/20) * 1rem;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
-    color:$highlightColor;
-    line-height: 1.2;
-}
-
-@mixin titleFont ($sizeValue) {
-    font-size: ($sizeValue/20) * 1rem;
-    font-family: 'Josefin Sans', sans-serif;
-    text-transform: uppercase;
-    line-height: 1;
-}
-
-@mixin bodyFont ($sizeValue) {
-    font-size: ($sizeValue/20) * 1rem;
-    font-family: 'Raleway', sans-serif;
-    line-height: 1.6;
-}
 
 // Mixins
 @mixin alignment ($flex-direction, $justify-content, $align-items, $text-align) {

@@ -17,6 +17,8 @@
         height: 0;
         width: 200px;
         z-index: -10;
+        opacity: 0;
+        animation: fade-slide-down 2s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
     }
     &::after{
         content:"";
@@ -29,7 +31,47 @@
         border-width: 375px 0 0 400px;
         border-color: transparent transparent transparent $primaryDark;
         z-index: -10;
+        opacity: 0;
+        animation: fade-slide-down 2s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
+        animation-delay: .8s;
     }
+}
+
+
+
+
+
+
+
+
+/* Animations */
+
+@keyframes fade-slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem) scale(.8);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes rotate-up {
+  100% {
+    transform: rotateZ(-4deg);
+  }
 }
 
 
