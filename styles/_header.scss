@@ -19,6 +19,7 @@ header {
         opacity: 0;
         animation: fade-slide-down 2s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
         animation-delay: .9s;
+        z-index: 10;
     }
 
     &::after { 
@@ -32,6 +33,7 @@ header {
         opacity: 0;
         animation: fade-slide-down 2s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
         animation-delay: 1s;
+        z-index: 10;
     }
     span {
         display: block;
@@ -46,6 +48,29 @@ header {
         opacity: 0;
         animation: fade-slide-down 2s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
         animation-delay: 1.2s;
+        z-index: 10;
         }
+    }
+}
+
+.header-main {
+    display: flex;
+    align-items: flex-start;
+    width: 70%;
+    height: 80vh;
+    z-index: 100;
+    position: absolute;
+    right:0;
+    bottom:0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    li {
+        margin-right:15px;
+    }
+    li:last-child {
+        margin-right:0;
     }
 }
