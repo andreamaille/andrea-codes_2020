@@ -1,14 +1,28 @@
-body,
-.wrapper,
-.header-background {
+body {
     max-width: 1440px;
     margin: 0 auto;
 }
 
 .wrapper {
-    width:85%;
+    width:80%;
+    margin: 0 auto;
+    max-width:1200px;
+    margin-right: 0;
+    z-index: 100000;
 }
 
+.inner-wrapper {
+    width:95%;
+    margin: 0 auto;
+}
+main {
+    width:100%;
+    max-width: 100%;
+}
+
+section {
+    padding: 75px 0;
+}
 ul, 
 li, 
 img,

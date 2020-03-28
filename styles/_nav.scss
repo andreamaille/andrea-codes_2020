@@ -1,87 +1,53 @@
 .sidebar {
-    position: fixed;
-    width:20%;
-    height: 100vh;
-    z-index: 200;
+  width:22%;
+  max-width:500px;
+  position:fixed;
+  height:100vh;
 }
+
  nav {
+  position: fixed;
+  top: 5%;
+  left: 4%;
+  z-index: 400;
+  .logo {
+    margin-bottom: 20px;
+  }
+  li {
+    margin: 15px 0;
+  }
+}
+
+.sidebar {
+  width:22%;
+  height:100%;
+  position: fixed;
+
+  .top,
+  .triangle {
+    display:block;
+  }
+
+  .top {
+    width:100%;
+    height:100%;
+    max-height:1000px;
+    background-color:$primaryLight;
+    position: absolute;
+    top: 0;
+    z-index:100;
+    clip-path: polygon(0 0, 100% 0, 50% 100%, 0% 100%);
+  }  
+
+  .triangle {
+    width:30%;
+    height:100%;
+    max-height:1000px;
+    background-color:$primaryDark;
     position: fixed;
-    z-index: 400;
- }
-
-.sidebar-bg {
-    z-index: 100;
-    span:first-child {
-        display: block;
-        top:0;
-        border-top: 600px solid $primaryLight;
-        border-left: 0px solid transparent;
-        border-right: 120px solid transparent;
-        height: 0;
-        width: 300px;
-        position: fixed;
-        z-index: 100;
-        opacity: 0;
-        animation: fade-slide-down 2s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
-    }
-    span:last-child{
-        display: block;
-        position: absolute;
-        bottom: 0;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 375px 0 0 400px;
-        border-color: transparent transparent transparent $primaryDark;
-        z-index: -10;
-        opacity: 0;
-        animation: fade-slide-down 2s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
-        animation-delay: .8s;
-        z-index:100;
-    }
-}
-
-
-
-
-
-
-
-
-/* Animations */
-
-@keyframes fade-slide-down {
-  0% {
-    opacity: 0;
-    transform: translateY(-4rem);
+    left:0;
+    bottom:0;
+    z-index:100;
+    clip-path: polygon(0 60%, 0% 100%, 100% 100%);
   }
-  100% {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-@keyframes pop-in {
-  0% {
-    opacity: 0;
-    transform: translateY(-4rem) scale(.8);
-  }
-  100% {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-@keyframes rotate-up {
-  100% {
-    transform: rotateZ(-4deg);
-  }
-}
-
-
-nav {
-    margin: 30px;
-    ul li {
-        margin: 20px 0;
-    }
 }

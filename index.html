@@ -13,54 +13,83 @@ Portfolio repo lives here:
     <title>andrea_codes</title>
 </head>
 <body>
-    <header>   
-        <div class="header-bg"><span></span></div>
-        <div class="sidebar">
-            <div class="sidebar-bg">
-                <span></span>
-                <span></span>
-            </div>
-            <nav>
-                <ul>
-                    <li class="logo">Andrea<span>.</span></li>
-                    <li><a href="#home" aria-label="Go to homepage">Home</a></li>
-                    <li><a href="#about" aria-label="Go to About Me section">About Me</a></li>
-                    <li><a href="#portfolio" aria-label="Go to Portfolio section">Portfolio</a></li>
-                    <li><a href="#skills" aria-label="Go to contact section">Skills</a></li>
-                    <li><a href="#cv" aria-label="Go to contact section">CV</a></li>
-                    <li><a href="#contact" aria-label="Go to contact section">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="header-main">
-            <div class="header-intro">
-                <p>Hi, there!</p>
-                <h1>
-                    <p>I'm Andrea</p>
-                    <p class="tagline">and I'm a front end developer</p>
-                </h1>
-                <ul class="social-icons">
-                    <li><a href="#contact" aria-label="Go to contact section"><i class="far fa-envelope"></i></a></li>
-                    <li><a href="https://twitter.com/andrea_codes" aria-label="Go to Andrea's Twitter"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li><a href="https://medium.com/@andrea.maille" aria-label="Go to Andrea's Medium Blog"><i
-                                class="fab fa-medium"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/andreamaille/" aria-label="Go to Andrea's Linkedin"><i
-                                class="fab fa-linkedin"></i></a></li>
-                    <li><a href="https://codepen.io/andrea_codes/" aria-label="Go to Andrea's codepen"><i class="fab fa-codepen"></i></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="header-image">
-                <img src="./assets/head-shot.png" alt="Headshot of Andrea Maille">
+
+    <div class="sidebar">
+        <!-- <div class="sidebar-bg"> -->
+            <span class="top"></span>
+            <span class="triangle"></span>
+        <!-- </div> -->
+        <nav>
+            <ul>
+                <li class="logo">Andrea<span>.</span></li>
+                <li><a href="#home" aria-label="Go to homepage">Home</a></li>
+                <li><a href="#about" aria-label="Go to About Me section">About Me</a></li>
+                <li><a href="#portfolio" aria-label="Go to Portfolio section">Portfolio</a></li>
+                <li><a href="#skills" aria-label="Go to contact section">Skills</a></li>
+                <li><a href="#cv" aria-label="Go to contact section">CV</a></li>
+                <li><a href="#contact" aria-label="Go to contact section">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header>
+        <div class="wrapper">
+            <div class="header-bg"><span></span></div>
+            <div class="header_main-content">
+                <div class="header-text">
+                    <p>Hi, there!</p>
+                    <h1>
+                        <p>I'm Andrea</p>
+                        <p class="tagline">and I'm a front end developer</p>
+                    </h1>
+                    <ul class="social-icons">
+                        <li><a href="#contact" aria-label="Go to contact section"><i class="far fa-envelope"></i></a></li>
+                        <li><a href="https://twitter.com/andrea_codes" aria-label="Go to Andrea's Twitter"><i
+                                    class="fab fa-twitter"></i></a>
+                        </li>
+                        <li><a href="https://medium.com/@andrea.maille" aria-label="Go to Andrea's Medium Blog"><i
+                                    class="fab fa-medium"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/andreamaille/" aria-label="Go to Andrea's Linkedin"><i
+                                    class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://codepen.io/andrea_codes/" aria-label="Go to Andrea's codepen"><i
+                                    class="fab fa-codepen"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-image">
+                    <img src="./assets/head-shot.png" alt="Headshot of Andrea Maille">
+                </div>
             </div>
         </div>
     </header>
 
-    <main>
 
-        <section>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, dolorum iste! Dolorum repellendus fugit quae perferendis dolore sunt molestias sequi. Tenetur, consectetur veniam est culpa ipsam officiis quae eius. Fugit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta deserunt ex quas doloribus delectus ratione repellat dignissimos, cupiditate enim temporibus, expedita amet blanditiis, ad aut? Necessitatibus blanditiis officia quos ab quis repudiandae quae quod, optio voluptates consequuntur cum doloribus deleniti rem facere, laboriosam magnam culpa, minus praesentium! Nisi, ratione.
+    <main>
+        <section id ="about">
+            <div class="wrapper">
+                <div class="inner-wrapper about-content">
+                    <div class="about-images">
+                        <div class="about-img">
+                            <img src="./assets/about-image.jpg" alt="Image of Andrea Maille">
+                        </div>
+                        <!-- <div class="about-img">
+                            <img src="./assets/about-image.jpg" alt="Image of Andrea Maille">
+                        </div> -->
+                        <div class="about-img">
+                            <img src="./assets/head-shot.png" alt="Image of Andrea Maille">
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <h3>About Me</h3>
+                        <p>Hello! My name is Andrea Maille and I’m a front-end web developer living in Toronto, ON. My journey into web development all started with my Etsy Store when I wanted to build my own website. One google search ended up with me finding my dream career. I've always been a creative person and when I discovered coding, I realized I had discovered the ultimate creative
+                        experience. I love seeing art, music, sound, movement, design and creative thinking all come together to create new spaces online. </p>
+                        <p>I currently work with the lovely folks at Commerce Dynamics to create great ecommerce experiences for fortune</p>
+                        <p>
+                        When I’m not coding, you can catch me listening to k-pop or late 90’s pop punk, playing cello, catching up on my
+                        favourite podcasts or bullet journalling.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
