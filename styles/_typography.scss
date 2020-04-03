@@ -5,7 +5,9 @@ html {
 // Fonts
 
 $font-size-base:    20;
+
 $font-size-lg:      28;
+$font-size-md:      24;
 $font-size-sm:      18;
 
 
@@ -80,4 +82,22 @@ h1 p:last-child {
 
 h3 {
     @include headingsFont ($font-size-lg);
+}
+
+// About Section 
+
+.about-text span {
+    color: $text;
+    @include displayFont($font-size-lg);
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+// Portfolio 
+
+.project-info h4 {
+    @include displayFont($font-size-lg);
+    margin: 0;
+    margin-bottom: 10px;
 }

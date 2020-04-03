@@ -1,0 +1,25 @@
+.portfolio-items
+    li {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    margin: 25px auto;
+}
+
+.project-image {
+    width: 40%;
+}
+
+.project-info {
+    width:58%;
+}
+
+.project-skills ul {
+    display: flex;
+
+}
+
+.project-links ul {
+    display: flex;
+}

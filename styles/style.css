@@ -225,6 +225,7 @@ a {
 h3 {
   text-align: center;
   margin: 25px auto;
+  margin-bottom: 40px;
 }
 
 html {
@@ -299,6 +300,28 @@ h3 {
   font-weight: 300;
   text-transform: uppercase;
   line-height: 1;
+}
+
+.about-text span {
+  color: #282c37;
+  font-size: 1.4rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.project-info h4 {
+  font-size: 1.4rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 header {
@@ -434,7 +457,8 @@ nav li {
 }
 
 .about-content .about-images {
-  width: 40%;
+  width: 30%;
+  min-height: 500px;
 }
 
 .about-content .about-images .about-img {
@@ -447,6 +471,43 @@ nav li {
 }
 
 .about-content .about-text {
-  width: 55%;
+  width: 65%;
+  position: relative;
+  top: -15px;
+}
+
+.portfolio-items
+li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: left;
+  margin: 25px auto;
+}
+
+.project-image {
+  width: 40%;
+}
+
+.project-info {
+  width: 58%;
+}
+
+.project-skills ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.project-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */
