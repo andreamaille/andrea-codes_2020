@@ -3,14 +3,10 @@
     justify-content: space-between;
     align-items: flex-start;
     text-align: left;
-    margin: 25px auto;
+    margin: 50px auto;
     padding:20px;
 }
 
-.portfolio-items > li:first-child {
-    background-color: $primaryLight;
-    box-shadow: 20px 20px 0px 0px $primaryDark;
-}
 
 
 .project-image {
@@ -33,15 +29,45 @@
 .project-links ul {
     width: 100%;
     display: flex;
+    margin: 15px 0;
+    li:first-child {
+        margin-right:20px;
+    }
 }
 
 
 .space-attack {
+    background-color: $primaryLight;
+    box-shadow: 20px 20px 0px 0px $primaryDark;
     h4 {
         @include lowHighlight($primaryDark);
     }
 
     .project-skills li {
         background-color: $primaryDark;
+    }
+}
+
+.next-on-shuffle {
+    background-color: $secondaryLight;
+    box-shadow: 20px 20px 0px 0px $secondary;
+    h4 {
+        @include lowHighlight($secondary);
+    }
+
+    .project-skills li {
+        background-color: $secondary;
+    }
+}
+
+.whats-for-dinner {
+    background-color: $purpleLight;
+    box-shadow: 20px 20px 0px 0px $purpleDark;
+    h4 {
+        @include lowHighlight($purpleDark);
+    }
+
+    .project-skills li {
+        background-color: $purpleDark;
     }
 }

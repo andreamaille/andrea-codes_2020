@@ -89,11 +89,12 @@ h3 {
 
 h4 {
     @include bodyFont($font-size-md);
+    display: inline;
     font-weight: 500;
     margin:0;
 }
 
-.space-attack h4 {
-    display: inline;
-    @include lowHighlight($primaryDark);
+.project-skills,
+.project-links {
+    font-weight: 500;
 }

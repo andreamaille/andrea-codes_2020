@@ -312,15 +312,14 @@ h4 {
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
   line-height: 1.6;
+  display: inline;
   font-weight: 500;
   margin: 0;
 }
 
-.space-attack h4 {
-  display: inline;
-  padding: 0 6px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(255, 255, 255, 0)), color-stop(50%, #e1eef6));
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #e1eef6 50%);
+.project-skills,
+.project-links {
+  font-weight: 500;
 }
 
 header {
@@ -486,14 +485,8 @@ nav li {
       -ms-flex-align: start;
           align-items: flex-start;
   text-align: left;
-  margin: 25px auto;
+  margin: 50px auto;
   padding: 20px;
-}
-
-.portfolio-items > li:first-child {
-  background-color: #f0f5f7;
-  -webkit-box-shadow: 20px 20px 0px 0px #e1eef6;
-          box-shadow: 20px 20px 0px 0px #e1eef6;
 }
 
 .project-image {
@@ -520,6 +513,17 @@ nav li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 15px 0;
+}
+
+.project-links ul li:first-child {
+  margin-right: 20px;
+}
+
+.space-attack {
+  background-color: #f0f5f7;
+  -webkit-box-shadow: 20px 20px 0px 0px #e1eef6;
+          box-shadow: 20px 20px 0px 0px #e1eef6;
 }
 
 .space-attack h4 {
@@ -530,5 +534,37 @@ nav li {
 
 .space-attack .project-skills li {
   background-color: #e1eef6;
+}
+
+.next-on-shuffle {
+  background-color: #FCF4EF;
+  -webkit-box-shadow: 20px 20px 0px 0px #f0e5de;
+          box-shadow: 20px 20px 0px 0px #f0e5de;
+}
+
+.next-on-shuffle h4 {
+  padding: 0 6px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(255, 255, 255, 0)), color-stop(50%, #f0e5de));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #f0e5de 50%);
+}
+
+.next-on-shuffle .project-skills li {
+  background-color: #f0e5de;
+}
+
+.whats-for-dinner {
+  background-color: #DFDFED;
+  -webkit-box-shadow: 20px 20px 0px 0px #CCCCE0;
+          box-shadow: 20px 20px 0px 0px #CCCCE0;
+}
+
+.whats-for-dinner h4 {
+  padding: 0 6px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(255, 255, 255, 0)), color-stop(50%, #CCCCE0));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #CCCCE0 50%);
+}
+
+.whats-for-dinner .project-skills li {
+  background-color: #CCCCE0;
 }
 /*# sourceMappingURL=style.css.map */
