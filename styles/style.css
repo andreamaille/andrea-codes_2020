@@ -235,93 +235,92 @@ html {
 body {
   color: #282c37;
   font-size: 1rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
   line-height: 1.6;
 }
 
-nav ul li {
-  color: #282c37;
-  font-size: 1rem;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 300;
-  text-transform: uppercase;
-  line-height: 1;
-}
-
 .logo {
-  font-size: 1.4rem;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
+  color: #282c37;
+  letter-spacing: 0.5px;
+  font-size: 1.75rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
   line-height: 1.2;
-  letter-spacing: 2px;
+  color: #282c37;
 }
 
 .logo span {
   color: #8283a7;
 }
 
-.header-intro p {
+h1 {
   color: #282c37;
   font-size: 2rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
   line-height: 1.6;
-  font-weight: 600;
-  letter-spacing: 2px;
+  font-weight: 700;
+  line-height: 1;
 }
 
-h1 p:first-child {
-  color: #8283a7;
-  font-size: 3rem;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  line-height: 1.2;
-  letter-spacing: 3px;
+h1 span {
+  padding: 0 6px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(255, 255, 255, 0)), color-stop(50%, #f0e5de));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #f0e5de 50%);
 }
 
-h1 p:last-child {
+.tagline {
   color: #282c37;
-  font-size: 1.25rem;
-  font-family: 'Raleway', sans-serif;
+  font-size: 1.8rem;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
   line-height: 1.6;
-  font-weight: 600;
-  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1;
 }
 
-.social-icons i {
-  font-size: 1.4rem;
+.tagline span {
+  color: #282c37;
+  letter-spacing: 0.5px;
+  font-size: 1.8rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.social-icons {
+  font-size: 1.5rem;
 }
 
 h3 {
   color: #282c37;
-  font-size: 1.4rem;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 300;
-  text-transform: uppercase;
-  line-height: 1;
+  letter-spacing: 0.5px;
+  font-size: 1.5rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  line-height: 1.2;
 }
 
-.about-text span {
+h3 span {
+  color: #8283a7;
+}
+
+h4 {
   color: #282c37;
-  font-size: 1.4rem;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  line-height: 1.2;
-  letter-spacing: 1px;
-  display: inline-block;
-  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  font-weight: 500;
+  margin: 0;
 }
 
-.project-info h4 {
-  font-size: 1.4rem;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  line-height: 1.2;
-  margin: 0;
-  margin-bottom: 10px;
+.space-attack h4 {
+  display: inline;
+  padding: 0 6px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(255, 255, 255, 0)), color-stop(50%, #e1eef6));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #e1eef6 50%);
 }
 
 header {
@@ -457,7 +456,7 @@ nav li {
 }
 
 .about-content .about-images {
-  width: 30%;
+  width: 40%;
   min-height: 500px;
 }
 
@@ -471,13 +470,12 @@ nav li {
 }
 
 .about-content .about-text {
-  width: 65%;
+  width: 55%;
   position: relative;
   top: -15px;
 }
 
-.portfolio-items
-li {
+.portfolio-items > li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -489,6 +487,13 @@ li {
           align-items: flex-start;
   text-align: left;
   margin: 25px auto;
+  padding: 20px;
+}
+
+.portfolio-items > li:first-child {
+  background-color: #f0f5f7;
+  -webkit-box-shadow: 20px 20px 0px 0px #e1eef6;
+          box-shadow: 20px 20px 0px 0px #e1eef6;
 }
 
 .project-image {
@@ -505,9 +510,25 @@ li {
   display: flex;
 }
 
+.project-skills ul li {
+  padding: 0 8px;
+  margin: 10px 10px 10px 0;
+}
+
 .project-links ul {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.space-attack h4 {
+  padding: 0 6px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(255, 255, 255, 0)), color-stop(50%, #e1eef6));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #e1eef6 50%);
+}
+
+.space-attack .project-skills li {
+  background-color: #e1eef6;
 }
 /*# sourceMappingURL=style.css.map */

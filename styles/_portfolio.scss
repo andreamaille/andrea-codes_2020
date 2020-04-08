@@ -1,11 +1,17 @@
-.portfolio-items
-    li {
+.portfolio-items > li {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     text-align: left;
     margin: 25px auto;
+    padding:20px;
 }
+
+.portfolio-items > li:first-child {
+    background-color: $primaryLight;
+    box-shadow: 20px 20px 0px 0px $primaryDark;
+}
+
 
 .project-image {
     width: 40%;
@@ -17,9 +23,25 @@
 
 .project-skills ul {
     display: flex;
+    li {
+        padding: 0 8px;
+        margin: 10px 10px 10px 0;
+    }
 
 }
 
 .project-links ul {
+    width: 100%;
     display: flex;
+}
+
+
+.space-attack {
+    h4 {
+        @include lowHighlight($primaryDark);
+    }
+
+    .project-skills li {
+        background-color: $primaryDark;
+    }
 }

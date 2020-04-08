@@ -3,35 +3,36 @@ html {
 }
 
 // Fonts
-
 $font-size-base:    20;
 
-$font-size-lg:      28;
+$font-size-xl:      35;
+$font-size-lg:      30;
 $font-size-md:      24;
 $font-size-sm:      18;
 
 
 @mixin displayFont ($sizeValue) {
+    color: $text;
+    letter-spacing: 0.5px;
     font-size: ($sizeValue/20) * 1rem;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
     line-height: 1.2;
 }
 
-@mixin headingsFont ($sizeValue) {
+@mixin headingFont ($sizeValue) {
     color: $text;
     font-size: ($sizeValue/20) * 1rem;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
     line-height: 1;
 }
 
 @mixin bodyFont ($sizeValue) {
     color: $text;
     font-size: ($sizeValue/20) * 1rem;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
     line-height: 1.6;
 }
 
@@ -39,65 +40,60 @@ $font-size-sm:      18;
     font-size: ($sizeValue/20) * 1rem;
 }
 
+@mixin lowHighlight ($color) {
+    padding: 0 6px;
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, $color 50%);
+}
 
 body {
     @include bodyFont ($font-size-base);
 }
 
-nav ul li {
-    @include headingsFont ($font-size-base);
-
-}
 
 .logo {
-    @include displayFont ($font-size-lg);
-    letter-spacing: 2px;
+    @include displayFont($font-size-xl);
+    color: $text;
     span {
         color: $contrast;
     }
 }
 
-
-.header-intro p {
-    @include bodyFont (40);
-    font-weight: 600;
-    letter-spacing: 2px;
+h1 {
+    @include bodyFont(40);
+    font-weight: 700;
+    line-height: 1;
+    span {
+        @include lowHighlight($secondary)
+    }
 }
 
-h1 p:first-child {
-    color: $contrast;
-    @include displayFont(60);
-    letter-spacing: 3px;
+.tagline {
+    @include bodyFont(36);
+    font-weight: 700;
+    line-height: 1;
+    span {
+        @include displayFont(36);
+    }
 }
 
-h1 p:last-child {
-    @include bodyFont (25);
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-.social-icons i {
+.social-icons {
     @include icons ($font-size-lg);
 }
 
 h3 {
-    @include headingsFont ($font-size-lg);
+    @include displayFont($font-size-lg);
+    span {
+        color: $contrast;
+    }
 }
 
-// About Section 
-
-.about-text span {
-    color: $text;
-    @include displayFont($font-size-lg);
-    letter-spacing: 1px;
-    display: inline-block;
-    margin-bottom: 10px;
+h4 {
+    @include bodyFont($font-size-md);
+    font-weight: 500;
+    margin:0;
 }
 
-// Portfolio 
-
-.project-info h4 {
-    @include displayFont($font-size-lg);
-    margin: 0;
-    margin-bottom: 10px;
+.space-attack h4 {
+    display: inline;
+    @include lowHighlight($primaryDark);
 }
