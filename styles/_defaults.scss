@@ -4,17 +4,19 @@ body {
 }
 
 .wrapper {
-    width:80%;
+    width:74%;
+    // border: 3px solid blue;
     margin: 0 auto;
     max-width:1200px;
-    margin-right: 0;
+    margin-right: 5%;
     z-index: 100000;
 }
 
-.inner-wrapper {
-    width:95%;
-    margin: 0 auto;
-}
+// .inner-wrapper {
+//     width:95%;
+//     margin: 0 auto;
+//     border: 3px solid red;
+// }
 main {
     width:100%;
     max-width: 100%;

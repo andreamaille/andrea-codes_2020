@@ -19,8 +19,10 @@ header {
     }
 
     .header-image {
-        width: 45%;
+        width: 40%;
         z-index:400;
+        position: absolute;
+        right:0;
         img {
             vertical-align: bottom;
         }
