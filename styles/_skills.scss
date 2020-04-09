@@ -1,0 +1,45 @@
+.skills {
+    background: $purpleDark;
+    .filter-controls {
+        margin: 10px auto;
+        display: flex;
+        justify-content: center;
+        li {
+            line-height: 1;
+            padding:0 5px;
+        }
+
+        li:nth-of-type(2) {
+            border-right: 2px solid $text;
+            border-left: 2px solid $text;
+        }
+    }
+}
+
+.skills-container {
+    background: $purpleLight;
+    box-shadow: 20px 20px 0px 0px $contrast;
+    padding:20px;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        li {
+            text-align: center;
+            // margin: 15px 20px;
+            width:125px;
+            i {
+                font-size: 70px;
+            }
+            p {
+                margin-top:5px;
+            }
+
+            svg {
+                fill: $text;
+                width:65px;
+            }
+        }
+    }
+}

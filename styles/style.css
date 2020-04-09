@@ -572,4 +572,68 @@ nav li {
 .whats-for-dinner .project-skills li {
   background-color: #CCCCE0;
 }
+
+.skills {
+  background: #CCCCE0;
+}
+
+.skills .filter-controls {
+  margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skills .filter-controls li {
+  line-height: 1;
+  padding: 0 5px;
+}
+
+.skills .filter-controls li:nth-of-type(2) {
+  border-right: 2px solid #282c37;
+  border-left: 2px solid #282c37;
+}
+
+.skills-container {
+  background: #DFDFED;
+  -webkit-box-shadow: 20px 20px 0px 0px #8283a7;
+          box-shadow: 20px 20px 0px 0px #8283a7;
+  padding: 20px;
+}
+
+.skills-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills-container ul li {
+  text-align: center;
+  margin: 15px 20px;
+  width: 150px;
+}
+
+.skills-container ul li i {
+  font-size: 70px;
+}
+
+.skills-container ul li p {
+  margin-top: 5px;
+}
+
+.skills-container ul li svg {
+  fill: #282c37;
+  width: 70px;
+}
 /*# sourceMappingURL=style.css.map */
