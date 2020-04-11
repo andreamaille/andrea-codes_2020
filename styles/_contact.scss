@@ -1,0 +1,43 @@
+.contact {
+    background:linear-gradient(45deg, $secondary 0%,$secondary 50%, $primaryDark 50%, $primaryDark 100%);
+}
+.contact-content {
+    display: flex;
+    padding:20px;
+    background-color: $white;
+    box-shadow: 20px 20px 0px 0px $text;
+
+    .contact-info {
+        width:45%;
+        p {
+            margin-top: 10px;
+        }
+    }
+
+    form {
+        width:50%;
+        display: flex;
+        flex-direction: column;
+        input,
+        textarea {
+            background-color:$white;
+            border: none;
+            border-bottom: 2px solid $text;
+            padding: 8px 0;
+        }   
+
+        input::placeholder, 
+        textarea::placeholder{
+            color: $text;
+            opacity: 0.9;
+        }
+
+        button {
+            color:$white;
+            background-color: $text;
+            border:none;
+            margin-top: 5px;
+            padding:10px;
+        }
+    }
+}
